@@ -1,3 +1,10 @@
+a:focus-visible {
+  outline: 0.125rem dashed crimson;
+  outline-offset: 0.2rem;
+  border-radius: 0.25rem;
+}
+
+
 @media (min-width: 40em) {
   /* TODO */
 }
