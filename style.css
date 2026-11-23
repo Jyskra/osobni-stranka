@@ -1,11 +1,30 @@
+:root {
+  color-scheme: light dark;
+  --bg: #f5f7fb;
+  --surface: #ffffff;
+  --text: #1f2937;
+  --link: #184caa;
+  --focus: #dc143c;
+}
+
 a:focus-visible {
-  outline: 0.125rem dashed crimson;
+  outline: 0.125rem dashed var(--focus);
   outline-offset: 0.2rem;
   border-radius: 0.25rem;
 }
 
 body {
   overflow-wrap: anywhere;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+.card {
+  background-color: var(--surface);
+}
+
+a {
+  color: var(--link);
 }
 
 .site-header,
@@ -70,9 +89,14 @@ img {
   }
 }
 
+
 @media (prefers-color-scheme: dark) {
   :root {
-    /* TODO */
+    --bg: #12161f;
+    --surface: #1c2432;
+    --text: #edf2f7;
+    --link: #a8c7ff;
+    --focus: #ff90ac;
   }
 }
 
